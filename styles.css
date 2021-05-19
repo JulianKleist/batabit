@@ -1,13 +1,4 @@
-/* Orden para ir generando estilos en css
-1. Posicionamiento
-2. Modelo caja (Box Model)
-3. Tipografia
-4. Visuales
-5. Otros
-*/
-
 :root{
-    /* Colores */
     --bitcoin-orange: #F7931A;
     --soft-orange: #ffe9d5;
     --secondary-blue: #1a9af7;
@@ -47,7 +38,7 @@ header img{
     width: 150px;
     height: 24px;
     margin-top: 60px;
-    align-self: center; /*alinear algo dentro de un contenedor con display-flex*/
+    align-self: center;
 }
 
 .header--title-container{
@@ -91,15 +82,15 @@ header img{
 
 .header--title-container .header--button {
     position: absolute;
-    left: calc(50% - 118px); /*posicionar en el centro - 118px*/
-    top: 270px; /*en absolute es posible mover en estas direcciones la posicion del elemento*/
+    left: calc(50% - 118px);
+    top: 270px;
     display: block;
     margin-top: 35px;
     padding: 15px;
     width: 229px;
     height: 48px;
     background-color: var(--off-white);
-    /* Sombra */
+
     box-shadow:0px 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
     border-radius: 5px;
@@ -141,7 +132,6 @@ main{
     margin: 0 auto;
     margin-bottom: 50px;
     background-image: url('./assets/imgs/bitcoin.svg');
-    /* Fijar imagen y que no se deforme */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -317,7 +307,7 @@ main{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    min-height: 150px; /* Esto se utiliza para resolver el desbordamiento */
+    min-height: 150px; 
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
@@ -429,7 +419,6 @@ main{
 .plans-container--slider{
     display: flex;
     height: 316px;
-    /* Alinear en vertical y aplicar un scroll a las sliders */
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -437,7 +426,7 @@ main{
 
 .plans-container--card{
     position: relative;
-    scroll-snap-align: center; /* Cuando hagas scroll te lleva al centro del elemento */
+    scroll-snap-align: center;
     width: 70%;
     min-width: 190px;
     max-width: 300px;
